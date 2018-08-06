@@ -18,7 +18,7 @@ app.use('/public/uploads',express.static(__dirname + '/public/uploads'));
 
 
 
-app.post('/product', function(req, res) {
+app.get('/product', function(req, res) {
 	xlsxtojson({
 		input: "./test_joe.xlsx",  // input xls
     output: "output.json", // output json
